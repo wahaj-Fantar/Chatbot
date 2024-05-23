@@ -1,0 +1,85 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.chat-container {
+    width: 400px; /* Increased width for better spacing */
+    height: 500px; /* Set a specific height for the chat container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    text-align: center;
+    border-bottom:1px solid black ;
+    color: #007bff;
+    
+}
+
+.chat-box {
+    flex: 1;
+    padding: 20px; 
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-input {
+    width: 75%;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px; 
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+}
+
+.send-button {
+    width: 60px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}
+.send-button:hover{
+    background-color: orange;
+    color: black;
+}
+
+.user-message, .bot-response {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.user-message {
+    background-color: #001F3F;
+    color: white;
+    align-self: flex-start;
+    margin-right: 20px; 
+}
+
+.bot-response {
+    background-color: #e9e9eb;
+    color: black;
+    align-self: flex-end; 
+    margin-left: 30px; 
+    text-align: right;
+}
